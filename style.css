@@ -47,7 +47,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* batas reseter */
 .wrapper {
-  display: flex;  
+  display: flex;
+  height: 80%;
   flex-flow: row;
   font-weight: bold;
   text-align: center;
@@ -61,6 +62,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 header {
+  height: 10%;
   display: flex;
   flex-flow: column;
   flex-direction: row;
@@ -81,10 +83,11 @@ header>img{
 }
 
 .footer {
+  height: 10%;
   background: lightgreen;
 }
 
-.main {
+article {
   text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: lighter;
@@ -104,12 +107,12 @@ section >img {
 
 
 @media all and (min-width: 600px) {
-  .main { flex: 1 0 0; }
+  article { flex: 1 0 0; }
 }
 
 @media all and (min-width: 800px) {
-  .main    { flex: 2 0px; }
-  .main    { order: 2; }
+  article    { flex: 2 0px; }
+  article    { order: 2; }
 }
 
 body {
