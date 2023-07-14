@@ -82,7 +82,7 @@ header>div {
   margin: 4px;
   text-indent:20px;
 }
-header>img{
+header>a img{
   float: left;
   width: 40px;
   height: 40px;
@@ -114,7 +114,9 @@ section >img {
   height: 70px;
   float: left;
 }
-
+footer {
+  padding: 10px;
+}
 
 @media all and (min-width: 600px) {
   article { flex: 1 0 0; }
