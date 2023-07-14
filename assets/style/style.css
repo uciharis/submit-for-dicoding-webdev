@@ -45,7 +45,7 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/* batas reseter */
+/* ---------------------batas resetter ----------------------- */
 .wrapper {
   display: flex;
   height: 80%;
@@ -55,7 +55,14 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 
 }
-.wrapper .faq li{
+.wrapper>.faq2{
+  border: 1px solid black;
+}
+article>.faq2 {
+  border: 1px solid black;
+}
+
+.wrapper .faq2 li{
   background-color: antiquewhite;
   padding: 5px;
   margin: 3px;
@@ -119,15 +126,43 @@ footer {
 }
 
 @media all and (min-width: 600px) {
+
   article { flex: 1 0 0; }
+  aside {
+    width: 20%;
+    padding: 0;
+  }
 }
 
 @media all and (min-width: 800px) {
   article    { flex: 2 0px; }
   article    { order: 2; }
+  aside {
+    width: 30%;
+    padding: 0;
+  }
 }
 
 body {
   padding: 1em; 
 }
 
+aside {
+  float: right;
+  padding-left: 20px;
+  width: 20%;
+  border: 1px solid black;
+
+}
+
+/*aside>p {
+  float:right;
+  width: 80%;
+  height: 60%;
+  border: 1px solid black;
+}*/
+aside>img{
+  display: inline;
+  border: 1px solid black;
+  width: 15%;
+}
