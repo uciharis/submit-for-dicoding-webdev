@@ -46,30 +46,6 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ---------------------batas resetter ----------------------- */
-.wrapper {
-  display: flex;
-  height: 80%;
-  flex-flow: row;
-  font-weight: bold;
-  text-align: center;
-  flex-wrap: wrap;
-
-}
-
-
-
-.wrapper .faq2 li{
-  background-color: antiquewhite;
-  padding: 5px;
-  margin: 3px;
-  list-style-type:none;
-}
-
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-}
-
 header {
   height: 10%;
   display: flex;
@@ -85,7 +61,7 @@ header>div {
   margin: 4px;
   text-indent:20px;
 }
-header>a img{
+header>a> img{
   float: left;
   width: 40px;
   height: 40px;
@@ -95,16 +71,32 @@ header>div>a {
   color: aliceblue;
 }
 
-.footer {
-  height: 10%;
-  background: lightgreen;
+article >.main {
+  border: 1px solid black;
+  display: flex;
+  height: 80%;
+  flex-flow: column;
+  font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap;
+
+}
+.faq2 >ul{
+  padding: 5px;
+  margin: 3px;
+  list-style-type:none;
 }
 
+.main > * {
+  padding: 10px;
+  flex: 1 100%;
+}
 article {
   text-align: left;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: lighter;
 }
+
 
 section {
   padding: 1px;
@@ -119,22 +111,36 @@ section >img {
 }
 footer {
   padding: 10px;
+  background-color: rgb(103, 228, 176);
 }
 
 @media all and (min-width: 600px) {
 
   article { flex: 1 0 0; }
+  footer {
+    background-color: white;
+  }
+  article>.transaksi {
+    float: left;
+    width: 80%;
+  }
   aside {
+    float: right;
     width: 20%;
     padding: 0;
   }
 }
 
 @media all and (min-width: 800px) {
-  article    { flex: 2 0px; }
+  article    { flex: 1 0px; }
   article    { order: 2; }
+  article>.transaksi{
+    float: left;
+    width: 60%;
+  }
   aside {
-    width: 30%;
+    float: right;
+    width: 40%;
     padding: 0;
   }
 }
@@ -144,11 +150,7 @@ body {
 }
 
 aside {
-  float: right;
   padding-left: 20px;
-  height: 20%;
-  border: 1px solid black;
-
 }
 
 /*aside>p {
@@ -159,6 +161,5 @@ aside {
 }*/
 aside>img{
   display: inline;
-  border: 1px solid black
-  height: 10%;
+  width: 250px;
 }
