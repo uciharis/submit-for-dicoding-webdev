@@ -55,12 +55,8 @@ p, h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 
 }
-.wrapper>.faq2{
-  border: 1px solid black;
-}
-article>.faq2 {
-  border: 1px solid black;
-}
+
+
 
 .wrapper .faq2 li{
   background-color: antiquewhite;
@@ -150,7 +146,7 @@ body {
 aside {
   float: right;
   padding-left: 20px;
-  width: 20%;
+  height: 20%;
   border: 1px solid black;
 
 }
@@ -163,6 +159,6 @@ aside {
 }*/
 aside>img{
   display: inline;
-  border: 1px solid black;
-  width: 15%;
+  border: 1px solid black
+  height: 10%;
 }
